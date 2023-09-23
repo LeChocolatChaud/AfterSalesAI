@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="scripts/index.js"></script>
     <title>AI售后机器人</title>
-</head>
-<body>
-    <h1>
-        AI售后机器人
-    </h1>
-    <div id="main-container">
-        <div class="split">
-            用户输入：
-            <textarea id="input-text" autocomplete="off"></textarea>
-            <button id="send-button">发送</button>
-        </div>
-        <div class="split">
-            AI输出：
-            <textarea id="output-text" readonly></textarea>
-        </div>
+  </head>
+  <body>
+    <h1 id="title">AI售后机器人</h1>
+    <div id="message-stacking">
+      <!-- 对话记录 -->
     </div>
-</body>
+    <div class="hsplit">
+      <input id="input-text" placeholder="在这里输入你的问题" />
+      <button id="send-button">发送</button>
+    </div>
+  </body>
 </html>
